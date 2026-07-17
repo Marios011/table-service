@@ -40,7 +40,7 @@ public class TableController {
 
 
     @PatchMapping("/api/tables/{id}/toggle-occupancy")
-    public RestaurantTable toggleOccupancy(@PathVariable("id") long id) {
+    public RestaurantTable toggleOccupancy(@PathVariable long id) {
         return tableService.toggleTableOccupancy(id);
     }
 
